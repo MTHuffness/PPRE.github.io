@@ -1,0 +1,93 @@
+<?php
+if($_POST["submit"]) {
+    mail("mhuffman88@ymail.com", "PREE Contact email!!", $_POST["userInformation"], "From: frogunda@gmail.com");
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Contact Pikes Peak Property Management</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <section id="innerbody">
+        <header id="toplinks">
+            <nav>
+                <ul>
+                    <li class="special-link" id="homelink"><a href="index.html" alt="Home Page">Home</a></li>
+                    <li class="special-link" id="propertieslink"><a href="properties.html" alt="">Properties / Vacancies</a>
+                    <!--<li class="special-link" id="contactlink"><a href="gallery.html" alt="">Gallery</a></li>-->             
+                    <li class="special-link" id="infolink"><a href="about.html" alt="">About</a></li>
+                    <li class="special-link" id="contactlink"><a href="contact.html" alt="">Contact</a></li>
+                </ul>
+            </nav>
+            <section id="Nametop">
+                <h1>Pikes Peak Property Management, LLC</h1>
+            </section>
+        </header>
+
+            <main id="contactinfo">
+                <div id="contactcompanyinfo">
+                    <h2 class="titleHeading3" >Pikes Peak Property Management</h2>
+                    <p>3615 E Uintah St.</p>
+                    <p>Colorado Springs, CO 80909</p>
+                    <p>(719)777-7777</p>
+                    <p>(719)888-8888</p><br>
+                    <figure class="contactMap" >
+                        <img src="images/birchwoodmap.png" alt="Pikes Peak Property Management Map" width="300px" height="300px">
+                    </figure>
+                </div>
+                <section id="contactform">
+                        <p>For more information on a specific property, please feel free to 
+                        contact the number above or complete & submit the information below.</p>
+                    <form id="contactInformation" action="contact.php" method="post">
+                        <fieldset id="contactFieldset">
+                            <legend>Contact Information</legend>
+                            <label for="formName">Name: <input type="text" placeholder="Full Name*" id="formName" class="form-control" name="userInformation" required/></label>
+                            <label for="formEmail">Email: <input type="email" id="formEmail" placeholder="Email Address*"  class="form-control" name="userInformation" required/></label>
+                            <label for="formPhone">Phone Number: <input type="tel" name="Number" id="formPhone" placeholder="Phone Number*" class="form-control" name="userInformation" required/></label>
+                            <label for="contactComment">Comments:
+                                <textarea id="contactComment" rows="5" cols="40" placeholder="Comments" name="userInformation" ></textarea>
+                            </label>
+                            <label>
+                                <h2>Select What You Are Inquiring About</h2>
+                                <select class="contactSelector" id="ownerInquiry" onchange="dropDown(this)" required>
+                                    <option value="0">Please Choose</option>
+                                    <option value="1">Full Service Property Management</option>
+                                    <option value="2">Landlord Leasing Service</option>
+                                    <option value="3">Renting a Property</option>
+                                    <option value="4">Home Finder Service</option>
+                                    <option value="5">Seling a Home</option>
+                                    <option value="6">Home Buying</option>
+                                    <option value="7">Investment Property Buying</option>
+                                    <option value="8">Other</option>
+                                </select>
+                            </label>
+                            <label id="chooseProperty">
+                                <h2>Select Your Property Interest</h2>
+                                    <select class="contactSelector" required>
+                                        <option value="0">Property of Interest</option>
+                                        <option value="1">Birchwood Village Apartments</option>
+                                        <option value="2">Fountain Terrace Apartments</option>
+                                        <option value="3">Pinewood Apartments</option>
+                                        <option value="3">Single Home Property (Specify in Comments)</option>
+                                    </select>
+                            </label>
+                        </fieldset>
+                            <button class="propertybuttons" type="submit" name="submit" >Submit</button>
+                    </form>
+                </section>
+            </main>
+        </section>
+        <footer>
+                <h5>Copyright 2016: Pikes Peak Property Management</h5>
+        </footer>
+            <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Fountain Terrace Gallery</title>
+        <link rel="stylesheet" href="CSS/style.css" />    
+        <!-- Bootstrap -->
+        <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    </head>
+
+    <body>
+        <section id="innerbodymin">
+                <h1 class="titleHeading1">Fountain Terrace Gallery</h1>  
+                <p id="mainGalleryLink" >Click picture to enlarge </p>
+                <table id="galleryTable">
+                    <tr>
+                        <td><img src="images/fountain terrace/frontpic1.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/fountain terrace/frontpic2.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/fountain terrace/frontpic3.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/fountain terrace/frontpic4.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/fountain terrace/frontpic5.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/fountain terrace/frontpic6.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/fountain terrace/FT building2.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/fountain terrace/FT Courtyard.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                    </tr>                
+                    <tr>
+                        <td><img src="images/fountain terrace/fountain.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/fountain terrace/fountain2.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/fountain terrace/FT fitness.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/fountain terrace/FT pool.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                    </tr>
+                </table>                                           
+            <div id="largeImagePanel">
+                <p>Click image to minimize</p>
+                <img id="largeImg" onclick="revertTable()">
+            </div>                                          
+        </section>
+    </body>
+    <script type="text/javascript" src="js/properties.js"></script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Pinewood Village Gallery</title>
+        <link rel="stylesheet" href="CSS/style.css" />    
+        <!-- Bootstrap -->
+        <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    </head>
+
+    <body>
+        <section id="innerbodymin">
+                <h1 class="titleHeading1">Pinewood Village Gallery</h1>   
+                <p id="mainGalleryLink" >Click picture to enlarge </p>
+                <table id="galleryTable">
+                    <tr>
+                        <td><img src="images/Pinewood/frontpic1.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/Pinewood/frontpic2.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/Pinewood/frontpic3.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/Pinewood/frontpic4.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/Pinewood/frontpic5.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/Pinewood/frontpic6.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/Pinewood/frontpic7.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/Pinewood/frontpic8.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                    </tr>                
+                    <tr>
+                        <td><img src="images/Pinewood/laundry.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/Pinewood/Lg 1br kitchen.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/Pinewood/PW one bedroom kitchen.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                        <td><img src="images/Pinewood/SM 1BR kitchen.jpg" alt="" height="120px" onclick="showImage(this.src)"></td>
+                    </tr>
+                </table>                                             
+            <div id="largeImagePanel">
+                <p>Click image to minimize</p>
+                <img id="largeImg" onclick="revertTable()">
+            </div>                                          
+        </section>
+    </body>
+    <script type="text/javascript" src="js/properties.js"></script>
+</html>

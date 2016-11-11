@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Pikes Peak Property Management Home Page</title>
+        <link rel="stylesheet" href="CSS/style.css" />    
+        <!-- Bootstrap -->
+        <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    </head>
+
+    <body>
+        <section id="innerbodymin">
+                <section class="formSpecial">
+                        <h1 class="titleHeading1">Contact Fountain Terrace Apartments</h1>
+                        <p>For more information on a specific property, please feel free to 
+                        contact the number above or complete & submit the information below.</p>
+                    <form id="contactInformation" action="" method="post">
+                        <fieldset id="contactFieldset">
+                            <legend>Contact Information</legend>
+                            <label for="formName">Name: <input type="text" placeholder="Full Name*" id="formName" class="form-control" required/></label>
+                            <label for="formEmail">Email: <input type="email" id="formEmail" placeholder="Email Address*"  class="form-control" required/></label>
+                            <label for="formPhone">Phone Number: <input type="tel" name="Number" id="formPhone" placeholder="Phone Number*" class="form-control" required/></label>
+                            <label for="formDate">Desired Move-In Date: <input type="date" name="moveIn" id="formDate" class="form-control" required/></label>
+                            <label for="contactComment">Comments:
+                                <textarea id="contactComment" rows="7" cols="33" placeholder="Comments"></textarea>
+                            </label>
+                        </fieldset>
+                            <button class="propertybuttons" type="submit">Submit</button>
+                    </form>
+                </section>
+        </section>
+    </body>
+</html>

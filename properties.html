@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Pikes Peak Property Management Home Page</title>
+        <link rel="stylesheet" href="CSS/style.css" />    
+        <!-- Bootstrap -->
+        <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    </head>
+    <body>
+        <section id="innerbodymin">
+<!--HEADER WHICH WILL CONTAIN A FIXED LINK BAR THAT 
+SCROLLS WITH THE PAGE (ALL CONTENT WIL BE ON ONE PAGE////////////////////////////////////////)-->
+        <header id="toplinks">
+            <nav>
+                <ul>
+                    <li class="special-link" id="homelink"><a href="index.html" alt="Home Page">Home</a></li>
+                    <li class="special-link" id="propertieslink"><a href="properties.html" alt="">Properties / Vacancies</a>
+                    <!--<li class="special-link" id="contactlink"><a href="gallery.html" alt="">Gallery</a></li>-->             
+                    <li class="special-link" id="infolink"><a href="about.html" alt="">About</a></li>
+                    <li class="special-link" id="contactlink"><a href="contact.html" alt="">Contact</a></li>
+                </ul>
+            </nav>
+            <section id="Nametop">
+                <h1>Pikes Peak Property Management, LLC</h1>
+            </section>
+        </header>
+        <main id="propertyHousing">
+            <h4 class="propertiesHeading">
+                Click Property Image to Learn More
+            </h4>
+            <!--PROPERTY 1-->
+            <div id="propSummary1" class="propertiesPic">
+                <figure>
+                    <img src="images/Birchwood/frontpic1.jpg" alt="property 1" onclick="loadBirchwood()">
+                </figure>
+                <div class="propertiesDefinition">
+                    <h4>Birchwood Apartments</h4>
+                </div>
+            </div>
+            <!--PROPERTY 2-->
+            <div id="propSummary2" class="propertiesPic">
+                <figure>
+                    <img src="images/Fountain Terrace/frontpic1.jpg" alt="property 1" onclick="apartments2()">
+                </figure>
+                <div class="propertiesDefinition">
+                    <h4>Fountain Terrace</h4>
+                </div>
+            </div>
+            <!--PROPERTY 3-->
+            <div id="propSummary3" class="propertiesPic">
+                <figure>
+                    <img src="images/Pinewood/frontpic1.jpg" alt="property 1" onclick="apartments3()">
+                </figure>
+                <div class="propertiesDefinition">
+                    <h4>Pinewood Village</h4>
+                </div>
+            </div>       
+            <!--PROPERTY 4-->     
+            <div id="propSummary4" class="propertiesPic">
+                <figure>
+                    <img src="images/Single Properties/509 Kearney Ave s/front of kearney.jpg" alt="property 1" onclick="apartments4()">
+                </figure>
+                <div class="propertiesDefinition">
+                    <h4>Single Family Home Properties</h4>
+                </div>
+            </div>
+        </main>
+            <!--DROPDOWN PAGE FOR PROPERTY 1-->
+            <section id="propDetail1" class="propertyFeature">
+                <div class="propInfo">
+                    <!--TOP LEFT HEADING INFORMATION-->
+                    <div class="propHeading">
+                        <h1>Birchwood Village Apartments</h1>
+                        <h2>3615-3618 E Uintah St.<br>Colorado Springs, CO 80909<br>(719) 777-7777</h2>
+                        <!--CONTACT PROPERTY BUTTON-->
+                        <form>
+                            <input type="button" id="contactProperty" value="Contact Property" onclick="birchwoodDirect()">
+                        </form>
+                        <!--PROPERTY SUMMARY INFORMAITON-->
+                        <p>Birchwood Village apartment homes offers a great location. A minute from the Citadel 
+                        Mall, other shopping, restaurants, and much much more. We have cozy 1 level one 
+                        bedroom ranch style apartment homes. On site laundry facilities, on site maintenance, 
+                        on site management, as well as courtesy patrol at night. Birchwood Village has a 
+                        pool with free WIFI, bbq grills, large courtyards. Birchwood Village accepts housing 
+                        authority vouchers. Furnished apartment homes and corporate leases are available</p>
+                        <!--MAP-->
+                        <div class="propMap">
+                            <h2>Map</h2>
+                            <figure class="map">
+                                <img src="images/birchwoodmap.png" alt="Birchwood Map">
+                            </figure>
+                        </div>
+                    </div>
+                    <!--NOT NECESSARY AT THE MOMENT - VACANCIES FILL UP FAST (CHECK FOR VALANCIES)
+                    <div class="checkVacancyButton">
+                        <h5>Check for Vacancies</h5>
+                     </div>
+                     -->
+                </div>
+                <!--PROPERTY IMAGE-->
+                <div id="birchwoodImage">
+                    <figure class="active">
+                        <img class="birchwoodPics" src="images/Birchwood/frontpic1.jpg" alt="property image">
+                    </figure>
+                    <figure>
+                        <img class="birchwoodPics" src="images/Birchwood/frontpic2.jpg" alt="property image">
+                    </figure>
+                    <figure>
+                        <img class="birchwoodPics" src="images/Birchwood/frontpic3.jpg" alt="property image">
+                    </figure>
+                    <!--FULL GALLERY LINK-->
+                    <h2 class="fullGalleryLink" onclick="pullBirchwoodGallery()">See Full Gallery</h2>
+                    <!--AMENITIES LINK-->
+                    <div class="amenitiesBox">
+                        <h2 class="amenities">Amenities:</h2>
+                        <ul>
+                            <li class="headamenity">Fitness & Recreation
+                                <ul>
+                                    <li class="subamenity">Pool</li>
+                                </ul>
+                            </li>
+                            <li class="headamenity">Features
+                                <ul>
+                                    <li class="subamenity">High Speed Internett Access</li>
+                                    <li class="subamenity">Smoke Free</li>
+                                </ul>
+                            <li class="headamenity">Services
+                                <ul>
+                                    <li class="subamenity">Laundry Facilities</li>
+                                    <li class="subamenity">Property Manager on Site</li>
+                                    <li class="subamenity">Concierge</li>
+                                    <li class="subamenity">Courtesy Patrol</li>
+                                    <li class="subamenity">Pet Play Area</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--DROPDOWN PAGE FOR PROPERTY 2-->
+            <section id="propDetail2" class="propertyFeature">
+                <div class="propInfo">
+                    <!--TOP LEFT HEADING INFORMATION-->
+                    <div class="propHeading">
+                        <h1>Fountain Terrace Apartments</h1>
+                        <h2>3209-3211 E Fountain Blvd<br>Colorado Springs, CO 80910<br>(719) 777-7777</h2>
+                        <!--CONTACT PROPERTY BUTTON-->
+                        <form>
+                            <input type="button" id="contactProperty" value="Contact Property" onclick="FountainTerraceDirect()">
+                        </form>
+                        <!--PROPERTY SUMMARY INFORMAITON-->
+                        <p>Welcome to Fountain Terrace Apartments, a wonderful apartment community with everything you're looking 
+                            for. Unwind at the swimming pool or take advantage of the sauna. At Fountain Terrace Apartments, 
+                            you're close to transportation, shopping and entertainment. With a wide variety of apartment layouts 
+                            to choose from, there's a perfect home for you at Fountain Terrace Apartments. We are a Senior 
+                            Community 55+.</p>
+                        <!--MAP-->
+                        <div class="propMap">
+                            <h2>Map</h2>
+                            <figure class="map">
+                                <img src="images/ftmap.png" alt="Birchwood Map">
+                            </figure>
+                        </div>
+                    </div>
+                    <!--NOT NECESSARY AT THE MOMENT - VACANCIES FILL UP FAST (CHECK FOR VALANCIES)
+                    <div class="checkVacancyButton">
+                        <h5>Check for Vacancies</h5>
+                     </div>
+                     -->
+                </div>
+                <!--PROPERTY IMAGE-->
+                <div id="ftImage">
+                    <figure class="active">
+                        <img src="images/fountain terrace/frontpic1.jpg" alt="Fountain Terrace Front Picture">
+                    </figure>
+                    <figure>
+                        <img src="images/fountain terrace/frontpic2.jpg" alt="Fountain Terrace Front Picture">
+                    </figure>
+                    <figure>
+                        <img src="images/fountain terrace/frontpic3.jpg" alt="Fountain Terrace Front Picture">
+                    </figure>
+                    <!--FULL GALLERY LINK-->
+                    <h2 class="fullGalleryLink" onclick="pullFTGallery()">See Full Gallery</h2>
+                    <!--AMENITIES LINK-->
+                    <div class="amenitiesBox">
+                        <h2 class="amenities">Amenities:</h2>
+                        <ul>
+                            <li class="headamenity">Fitness & Recreation
+                                <ul>
+                                    <li class="subamenity">Pool</li>
+                                    <li class="subamenity">Sauna</li>
+                                </ul>
+                            </li>
+                            <li class="headamenity">Features
+                                <ul>
+                                    <li class="subamenity">High Speed Internet Access</li>
+                                    <li class="subamenity">Smoke Free</li>
+
+                                </ul>
+                            <li class="headamenity">Services
+                                <ul>
+                                    <li class="subamenity">Clubhouse</li>
+                                    <li class="subamenity">Breakfast/Coffee Concierge</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--DROPDOWN PAGE FOR PROPERTY 3-->
+            <section id="propDetail3" class="propertyFeature">
+                <div class="propInfo">
+                    <!--TOP LEFT HEADING INFORMATION-->
+                    <div class="propHeading">
+                        <h1>Pinewood Village</h1>
+                        <h2>3105 E Dale St<br>Colorado Springs, CO 80909<br>(719) 777-7777</h2>
+                        <!--CONTACT PROPERTY BUTTON-->
+                        <form>
+                            <input type="button" id="contactProperty" value="Contact Property" onclick="pinewoodDirect()">
+                        </form>
+                        <!--PROPERTY SUMMARY INFORMAITON-->
+                        <p>This apartment community was built in 1971 and has 3 stories with 53 units. </p>
+                        <!--MAP-->
+                        <div class="propMap">
+                            <h2>Map</h2>
+                            <figure class="map">
+                                <img src="images/pinewoodmap.png" alt="Birchwood Map">
+                            </figure>
+                        </div>
+                    </div>
+                    <!--NOT NECESSARY AT THE MOMENT - VACANCIES FILL UP FAST (CHECK FOR VALANCIES)
+                    <div class="checkVacancyButton">
+                        <h5>Check for Vacancies</h5>
+                     </div>
+                     -->
+                </div>
+                <!--PROPERTY IMAGE-->
+                <div id="pinewoodImage">
+                    <figure class="active">
+                        <img src="images/pinewood/frontpic1.jpg" alt="Pinewood Village Front Picture">
+                    </figure>
+                    <figure>
+                        <img src="images/pinewood/frontpic2.jpg" alt="Pinewood Village Front Picture">
+                    </figure>
+                    <figure>
+                        <img src="images/pinewood/frontpic3.jpg" alt="Pinewood Village Front Picture">
+                    </figure>
+                    <!--FULL GALLERY LINK-->
+                    <h2 class="fullGalleryLink" onclick="pullPinewoodGallery()">See Full Gallery</h2>
+                    <!--AMENITIES LINK-->
+                    <div class="amenitiesBox">
+                        <h2 class="amenities">Amenities:</h2>
+                        <ul>
+                            <li class="headamenity">Features
+                                <ul>
+                                    <li class="subamenity">High Speed Internet Access</li>
+                                    <li class="subamenity">Heating</li>
+                                    <li class="subamenity">Smoke Free</li>
+
+                                </ul>
+                            <li class="headamenity">Services
+                                <ul>
+                                    <li class="subamenity">Laundry Facilities</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--DROPDOWN PAGE FOR PROPERTY 4-->
+            <section id="propDetail4" class="propertyFeature">
+                <div class="propInfo">
+                    <div class="propHeading">
+                        <h1>2 Bedroom / 2 Bath</h1>
+                    <div class="amenitiesBox">
+                        <h2 class="amenities">Overview:</h2>
+                            <ul>
+                                <li>2 Bedrooms</li>
+                                <li>2 Bathrooms</li>
+                                <li>2,500 Sq Feet</li>
+                            </ul>
+                        </div>
+                        <button type="button" id="contactProperty" >Contact Property</button>
+                    </div>
+                </div>
+                <div class="propDetailImage">
+                    <figure class="active">
+                        <img src="images/Single Properties/312 Leta Dr/frontpic1.jpg" alt="property image">
+                    </figure>
+                    <h2 class="fullGalleryLink" onclick="pullApartment4Gallery()">See Full Gallery</h2>
+                </div>
+            </section>
+        </section>
+<!--FOOTER OF PAGE///////////////////////////////////////////////////////////////////////////////-->
+        <footer id="movePageLower">
+                <h5>Copyright 2016: Pikes Peak Property Management</h5>
+        </footer>
+            <script type="text/javascript" src="js/properties.js"></script>
+    </body>
+</html>
