@@ -1,0 +1,993 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*background: linear-gradient(rgba(128, 0, 32, 1),rgba(128, 0, 32, 0));*/
+    background: peachpuff;
+    font-size: 12px;
+    color: peachpuff;
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+}
+#innerbody {
+    width: 80%;
+    background: rgba(128, 0, 32, .75);
+    margin: 0 auto;
+    min-height: 800px;
+    box-shadow: 0 0 10px rgba(128, 0, 32, 1);
+}
+#innerbodyhome {
+    width: 80%;
+    background: rgba(128, 0, 32, .75);
+    margin: 0 auto;
+    min-height: 1100px;
+    box-shadow: 0 0 10px rgba(128, 0, 32, 1);
+}
+#innerbodymin {
+    width: 80%;
+    background: rgba(128, 0, 32, .75);
+    margin: 0 auto;
+    min-height: 600px;
+    box-shadow: 0 0 10px rgba(128, 0, 32, 1);
+}
+/*TITLE STYLING*/
+.titleHeading1 {
+    background-image: linear-gradient(to right,rgba(128, 0, 32, 0) 10%, rgba(128, 0, 32, 1) 90%);
+    border-bottom: 1px solid peachpuff;
+    color: peachpuff;
+    font-size: 1.1rem;
+}
+.titleHeading2 {
+    margin: 0;
+    font-size: 1.4rem;
+    background-image: linear-gradient(to left,rgb(128, 0, 32) 0%,rgb(255, 218, 185) 100%);
+    color: rgb(128, 0, 32);
+    text-shadow: 1px 1px 10px peachpuff;
+}
+.titleHeading3 {
+    margin: 0;
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    text-align: center;
+    background-image: linear-gradient(to right,rgb(128, 0, 32) 0%,rgb(255, 218, 185) 50%,rgb(128, 0, 32) 100%);
+    text-shadow: 0 0 3px peachpuff;
+    color: rgb(128, 0, 32);
+}
+.normal {
+    color: white;
+}
+.fontBig {
+    font-size: 30px;
+}
+.fontMedium {
+    font-size: 17px;
+}
+.fontSmall {
+    font-size: 12px;
+}
+/*HEADER ////////////////////////////////////////////////////////////////*/
+header#toplinks {
+    width: 80%;
+    height: 6rem;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .5));
+    margin: 0 auto 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+#Nametop h1 {
+    color: rgba(128, 0, 32, 1);
+    float: right;
+    font-family: papyrus;
+    font-size: 2rem;
+    margin: 15px 0;
+    text-shadow: 0 0 2px black;
+}
+@media (max-width: 74rem) {
+    header#toplinks {
+        width: 85%;
+    }
+    #Nametop h1 {
+        float: none;
+        text-align: center;
+    }
+}
+@media (max-width: 70rem) {
+    header#toplinks {
+        width: 90%;
+    }
+}
+@media (max-width: 66rem) {
+    header#toplinks {
+        width: 100%;
+    }
+}
+@media (max-width: 59rem) {
+    nav ul li {
+        margin: 0 auto;
+    }
+    nav ul li.special-link {
+        margin-right: 6px;
+        padding: 0 15px;
+    }
+}
+/*NAVIGATION BAR////////////////////////////////////////////////////////////////*/
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+}
+nav ul:after {
+    content: ""; clear: both; display: block;
+}
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+        font-size: 16px;   
+        padding: 0 20px; 
+    }   
+        nav ul li a {
+            text-decoration: none;
+            color: peachpuff;
+            font-weight: bold;
+
+        }
+nav ul li:hover > ul {
+    display: block;
+}
+li.special-link {
+    background-color: rgba(255,255,255,.3);
+    border-radius: 5px;
+}
+li.special-link:hover, li.special-sublink:hover   {
+    background: linear-gradient(to top left, green, blue);
+}
+li.special-link:active  {
+    background-color: fuchsia;
+}
+/*PIKES PEAK BACKGROUND PICTURE////////////////////////////////////////////////////////*/
+h1#pikespeak {
+    width: 90%;
+    height: 370px;
+    background: url('../images/cs6.png') no-repeat left top;
+    background-size: 100% 100%;
+    text-indent: -9999px;
+    margin: 0 auto;
+}
+/*MAIN WELCOME PAGE//////////////////////////////////////////////////////////////*/
+.classicborder {
+    margin: 20px auto 10px auto;
+    width: 85%;
+    background: linear-gradient(rgba(128, 0, 32, 1),rgba(128, 0, 32, 0));
+    border-top: 1px solid black;
+    box-sizing: border-box;
+    height: 40rem;
+    max-height: 100%;
+}
+section#welcome {
+    float: left;
+    width: 38%;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+section#carousel {
+    float: left;
+    width: 42%;
+    box-sizing: border-box;
+    margin-right: 2%;
+}
+div#hours {
+    float: left;
+    box-sizing: border-box;
+    width: 15%;
+    border: 1px black solid;
+    box-shadow: 0 0 20px peachpuff;
+    margin-top: -10px;
+    background: linear-gradient(rgba(128, 0, 32, 1),rgba(128, 0, 32, 0));
+}
+@media (max-width: 85rem) {
+    .classicborder {
+        width: 90%;
+    }
+    section#carousel {
+        width: 40%;
+    }
+    div#hours {
+        margin: 0;
+    }
+    .classicborder {
+        min-height: 45rem;
+    }
+}
+@media (max-width: 75rem) {
+    .classicborder {
+        width: 100%;
+        height: 65rem;
+    }
+    section#welcome {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+    section#carousel {
+        width: 70%;
+        margin-right: 2%;
+        margin-left: 1%;
+    }
+    div#hours {
+        width: 25%;
+        margin-right: 1%;
+    }
+}
+/*IMAGE CAROUSEL CSS SETTINGS//////////////////////////////////////*/
+#carousel figure {
+    margin: 0;
+}
+#carousel > figure.active > img {
+    width: 100%;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    height: auto;
+    border-radius: 6px;
+}
+#carousel > figure > img {
+    display: none;
+}
+/*WELCOME LETTER SETTING ///////////////////////////////////////////////////*/
+section#welcomepage h2, #carousel h2 {
+    border-bottom: 2px solid black;
+    padding: 5px;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    background-image: linear-gradient(to right,rgba(128, 0, 32, 0) 0%,rgb(255, 218, 185) 50%,rgba(128, 0, 32, 0) 100%);
+    text-shadow: 0 0 3px peachpuff;
+    color: rgb(128, 0, 32);
+}
+section#welcomepage p, #carousel p {
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+}
+section#contactinfo {
+    margin-top: 30px;
+}
+section#contactinfo h2 {
+    color: white;
+    font-size: 17px;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    text-shadow: 5px 5px 5px black;
+}
+section#contactinfo p {
+    color: white;
+    font-size: 14px;
+    padding: 20px 0 10px 30px;
+}
+/*HOURS SETTING ///////////////////////////////////////////////////*/
+div#hours ul {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+div#hours ul li {
+    text-align: left;
+    color: white;
+    padding: 10px 0 20px 5px;
+    font-size: 1.2em;
+}
+div#hours ul li#hours-top {
+    text-align: left;
+    border-bottom: 2px solid black;
+    font-size: 4em;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+/*HOVERING BOX SETTING ///////////////////////////////////////////////////*/
+#box {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(128, 0, 32, 1);
+    border-radius: 50px;
+    position: absolute;
+}
+@keyframes box {
+    from {background-color: rgba(128, 0, 32, .5); border-radius: 50px; top: 15%; left: 55%}
+    to {background-color: rgba(128, 0, 32, .25); border-radius: 100px; top: 25%; left: 65%}
+}
+#box {
+    animation-name: box;
+    animation-duration: 10s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+#box h3 {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+/*FOOTER SETTING ///////////////////////////////////////////////////*/
+
+footer {
+    clear: both;
+    width: 90%; 
+}
+footer h5 {
+    margin: 0;
+    text-align: right;
+    color: rgb(128, 0, 32);
+    text-decoration: none;
+    font-size: 10px;
+}
+/*TOP OF PROPERTIES SECTION////////////////////////////////////////////////*/
+section#properties-top {
+    clear: both;
+}
+/*INDIVIDUAL PROPERTIES SECTION////////////////////////////////////////////////*/
+section.properties {
+    margin: 50px auto 30px;
+    width: 80%;
+    background: linear-gradient(rgba(128, 0, 32, 1),rgba(128, 0, 32, 0));
+    border: 1px solid black;
+    box-shadow: 0 0 20px peachpuff;
+    min-height: 20rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+    .property-info {
+        float: left;
+        width: 35%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        color: white;
+
+    }
+        .property-info p {
+            font-size: 1rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        .propertybuttons {
+        height: 40px;
+        width: 150px;
+        border-radius: 20px;
+        background: peachpuff;
+        color: rgb(128, 0, 32);
+        margin: 1rem;
+        border-color: black;
+        font-weight: bold;
+        font-size: .9rem;
+        }
+            .propertybuttons:hover {
+                font-size: 1rem;
+                color: peachpuff;
+                border-color: peachpuff;
+                background: rgb(128, 0, 32);
+                cursor: pointer;
+                box-shadow: 0 0 10px black;
+            }
+    .property-features {
+        float: left;
+        width: 20%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: .5rem 0;
+        color: white;
+    }
+        .property-features ul {
+            margin: 2px;
+        }
+    #birchwood-carousel, #carousel-1 {
+    float: left;
+    width: 45%;
+    box-sizing: border-box;
+    min-width: 25rem;
+    }
+#birchwood-carousel > figure.active img, #carousel-1 > figure.active img {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    height: auto;
+    border-radius: 6px;
+}
+#birchwood-carousel img, #carousel-1 img {
+    display: none;
+}
+.clear-property {
+    clear: both;
+    width: 100%;
+}
+@media (max-width: 102.5rem) {
+    section.properties {
+        height: 23rem;
+    }
+}
+@media (max-width: 85rem) {
+    .property-features, .property-info, figure.active {
+        float: none;
+        width: 100%;
+    }
+    .property-features {
+        padding: 10px;
+    }
+    .property-features ul {
+        margin: 0 auto;
+    }
+    section.properties {
+        height: 60rem;
+        width: 70%;
+    }
+    #birchwood-carousel, #carousel-1 {
+        margin: 0 auto;
+        width: 40rem;
+    }
+}
+@media (max-width: 80rem) {
+    section.properties {
+        height: 60rem;
+        width: 80%;
+    }
+    #birchwood-carousel, #carousel-1 {
+        /*width: 40rem;*/
+        margin: 0 auto;
+
+    }
+}
+@media (max-width: 70rem) {
+    section.properties {
+        height: 60rem;
+        width: 90%;
+    }
+    #birchwood-carousel, #carousel-1 {
+        width: 40rem;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 65rem) {
+    section.properties {
+        height: 60rem;
+        width: 100%;
+    }
+    #birchwood-carousel, #carousel-1 {
+        width: 40rem;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 55rem) {
+    #birchwood-carousel, #carousel-1 {
+        width: 35rem;
+        margin: 0 auto;
+    }
+}
+/*VACANT PROPERTIES SECTION/////////////////////////////////*/
+#propertyHousing {
+    background: linear-gradient(rgba(128, 0, 32, 1),rgba(128, 0, 32, 0));
+    border: 1px solid peachpuff;
+    width: 80%;
+    min-height: 20rem;
+    margin: 2rem auto 0;
+    border-radius: 20px;
+}
+    .propertiesHeading {
+        margin: 0;
+        font-size: 1.4rem;
+        margin: 0 1rem;
+        text-align: center;
+        background-image: linear-gradient(to right,rgb(128, 0, 32) 0%,rgb(255, 218, 185) 50%,rgb(128, 0, 32) 100%);
+        color: rgb(128, 0, 32);
+    }
+#propSummary1, #propSummary2, #propSummary3 {
+    float: left;
+    width: 24%;
+    margin-right: 1.33%;
+    box-sizing: border-box;
+}
+#propSummary4 {
+    float: left;
+    width: 24%;
+    margin: 0;
+    box-sizing: border-box;
+}
+.propertiesPic {
+    border: 1px solid peachpuff;
+    height: 100%;
+    margin: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+    .propertiesPic figure {
+        margin: 0;
+    }
+    .propertiesPic img {
+        width: 100%;
+        height: 18rem;
+        border-radius: 20px;
+    }
+    .propertiesPic:hover {
+        opacity: .5;
+        border: 1px solid rgb(128, 0, 32);
+        box-shadow: 0 0 5px peachpuff;
+    }
+    .propertiesDefinition {
+        position: relative;
+        background: rgba(128, 0, 32, .8);
+        margin: -4rem auto 0;
+        height: 1.8rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 1rem 0;
+    }
+        .propertiesDefinition h4 {
+            color: peachpuff;
+            margin: 0 1.5rem 0;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+@media(max-width: 77rem) {
+    .propertiesDefinition {
+        height: 3.5rem;
+        margin-top: -5.7rem;
+    }
+}
+@media(max-width: 70rem) {
+    #propertyHousing {
+        width: 90%;
+    }
+}
+@media(max-width: 65rem) {
+    #propertyHousing {
+        width: 100%;
+    }
+    .propertiesDefinition {
+        height: 5rem;
+        margin-top: -7.1rem;
+    }
+}
+
+/*DETAIL OF PROPERTY INFORMATION*/
+#propDetail1, #propDetail2, #propDetail3, #propDetail4 {
+    clear: both;
+    width: 90%;
+    height: 48rem;
+    border-left: 5px solid peachpuff;
+    margin: 5rem auto;
+    border-top-left-radius: 100px;
+    display: none;
+}
+#propDetail2, #propDetail3, #propDetail4 {
+    display: none;
+}
+.propInfo {
+    float: left;
+    width: 50%;
+    height: 48rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid peachpuff;
+    border-right: 1px solid peachpuff;
+    margin: 0;
+    border-top-left-radius: 100px;
+}
+        .propHeading h1 {
+            background-image: linear-gradient(to right,rgba(128, 0, 32, 0) 10%, rgba(128, 0, 32, 1) 90%);
+            border-bottom: 1px solid peachpuff;
+            z-index: 0;
+            margin-left: .9rem;
+            text-indent: 5rem;
+        }
+        .propHeading h2 {
+            float: left;
+            width: 45%;
+            box-sizing: border-box;
+            margin-left: 7rem;
+            color: white;
+        }
+        #contactProperty {
+            float: right;
+            width: 25%;
+            height: 70px;
+            box-sizing: border-box;
+            border: 1px solid peachpuff;
+            font-size: 1.4rem;
+            margin-top: 1rem;
+            margin-right: 1rem;
+            background: rgba(128, 0, 32, 0);
+            white-space: normal;
+            cursor: pointer;
+            color: rgb(128, 0, 32);
+            
+            background-image: linear-gradient(to right,rgb(128, 0, 32) 0%,rgb(255, 218, 185) 50%,rgb(128, 0, 32) 100%);
+        }
+            #contactProperty:hover {
+                font-size: 1.5rem;
+                background-image: linear-gradient(to right,rgb(255, 218, 185) 0%, rgb(128, 0, 32) 50%, rgb(255, 218, 185) 100%);
+                color: peachpuff;
+                text-shadow: 0 0 1px black;
+                border: 1px solid rgb(128, 0, 32);
+            }
+        .propHeading p {
+            clear: both;
+            margin: 0 3rem 0 7rem;
+            font-size: 1rem;
+            color: white;
+        }
+.propMap {
+    margin: 0;
+}
+    .propMap h2 {
+        background-image: -webkit-linear-gradient(left, rgba(128, 0, 32, 0) 10%, rgba(128, 0, 32, 1) 90%);
+        background-image: -o-linear-gradient(left, rgba(128, 0, 32, 0) 10%, rgba(128, 0, 32, 1) 90%);
+        background-image: linear-gradient(to right, rgba(128, 0, 32, 0) 10%, rgba(128, 0, 32, 1) 90%);
+        color: peachpuff;
+        font-size: 1.2rem;
+        border-bottom: 1px solid peachpuff;
+        margin: 0;
+        text-indent: 7rem;
+        width: 100%;
+    }
+    .map img {
+        width: 80%;
+        margin: 1rem 4rem;
+    }
+.fullGalleryLink {
+    clear: both;
+    margin: -1rem auto 2rem;
+    text-align: center;
+    width: 100%;
+    color: rgb(128, 0, 32);
+    cursor: pointer;
+    text-decoration: underline;
+    background-image: linear-gradient(to right,rgba(128, 0, 32, 0) 30%,rgb(255, 218, 185) 50%,rgba(128, 0, 32, 0) 70%);
+}
+    .fullGalleryLink:hover {
+    text-shadow: 0 0 1px peachpuff;
+    font-size: 1.2rem;
+    }
+
+#birchwoodImage, #ftImage, #pinewoodImage {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+    #birchwoodImage > figure.active > img, #ftImage > figure.active > img, #pinewoodImage > figure.active > img {
+        border-top-right-radius: 100px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: 1px solid peachpuff;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        overflow: hidden;
+        height: 25rem;
+    }
+    #birchwoodImage > figure > img, #ftImage > figure > img, #pinewoodImage > figure > img {
+        display: none;
+    }
+.left_button, .right_button {
+    font-size: 4rem;
+    color: peachpuff;
+    background: rgba(128, 0, 32, .25);
+    position: relative;
+    border: 1px solid rgba(128, 0, 32, 0);
+    display: inline-block;
+    height: 15rem;
+}
+.amenities {
+    font-size: 1.5rem;
+    text-align: center;
+    background-image: linear-gradient(to left,rgba(128, 0, 32, 0) 10%, rgba(128, 0, 32, 1) 90%);
+    border-bottom: 1px solid peachpuff;
+}
+.amenitiesBox {
+    border-left: .5px solid peachpuff;
+    border-bottom: 1px solid peachpuff;
+}
+    .amenitiesBox ul {
+        margin-left: 10%;
+        width: 80%;
+    }
+    .subamenity {
+        color: white;
+        font-size: 1rem;
+    }
+    .headamenity {
+        color: peachpuff;
+        font-size: 1.2rem;
+    }
+    .amenitiesBox table {
+        border: 1px solid black;
+    }
+    .amenitiesBox tr {
+        border: 1px solid blue;
+    }
+    #propDetailImage ul {
+        font-size: 1.1rem;
+        color: white;
+        margin-left: 4rem;
+    }
+    .checkVacancyButton {
+        position: relative;
+        margin: -.1rem 0 0 -.35rem;
+        border: 1px solid peachpuff;
+        width: 100.75%;
+        height: 2rem;
+        background-image: linear-gradient(to right,rgb(128, 0, 32) 0%,rgb(255, 218, 185) 50%,rgb(128, 0, 32) 100%);
+        border-bottom-left-radius: 30px;
+        cursor: pointer;
+    }
+        .checkVacancyButton:hover, .checkVacancyButton h5:hover {
+            background-image: linear-gradient(to right,rgb(255, 218, 185) 0%, rgb(128, 0, 32) 50%, rgb(255, 218, 185) 100%);
+            color: peachpuff;
+            font-size: 1.55rem;
+            border-bottom-left-radius: 30px;
+            text-shadow: 0 0 1px rgb(128, 0, 32);
+        }
+        .checkVacancyButton h5 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 0;
+            color: rgba(128, 0, 32, .5);
+            text-shadow: 0 0 1px black;
+        }
+@media(max-width:80rem) {
+    #propDetail1, #propDetail2, #propDetail3, #propDetail4 {
+        height: 110rem;
+        background: rgba(128, 0, 32, .75);
+        width: 98%;
+    }
+    .propInfo {
+        float: none;
+        width: 100%;
+    }
+    .propMap {
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .map {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .map img {
+        margin: 2rem 0 0;
+        width: 100%;
+        height: auto;
+    }
+    #birchwoodImage, #ftImage, #pinewoodImage {
+        margin-top: 2rem;
+        float: none;
+        width: 90%;
+    }
+    #birchwoodImage > figure.active > img, #ftImage > figure.active > img, #pinewoodImage > figure.active > img {
+        width: 80%;
+        height: auto;
+    }
+}
+@media(max-width:70rem) {
+    .map {
+        width: 60%;
+    }
+}
+
+/*CONTACT STYLING//////////////////////////////////////////////*/
+#contactinfo {
+    margin: 2rem auto 10px auto;
+    width: 80%;
+    background: linear-gradient(rgba(128, 0, 32, 1),rgba(128, 0, 32, 0));
+    box-sizing: border-box;
+    border: 1px solid black;
+    box-shadow: 0 0 20px black;
+    min-height: 43rem;
+}
+#contactcompanyinfo {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 100%;
+    border-right: 1px solid peachpuff;
+    margin: 0 2.5% 0 2.5%;
+    height: 42.9rem;
+
+}
+    #contactcompanyinfo p {
+        margin-left: 4rem;
+    }
+    #contactcompanyinfo img {
+        margin: 0 auto;
+    }
+.form-control {
+  display: block;
+  width: 90%;
+  height: 24px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+#contactComment {
+    margin: 5px;
+    border-radius: 8px;
+}
+.form-control:focus, #contactComment:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 10px peachpuff;
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 10px peachpuff;
+}
+#contactcompanyinfo p {
+    font-size: 18px;
+    color: white;
+}
+section#contactform {
+    box-sizing: border-box;
+    float: left;
+    width: 40%;
+    padding: 0 0 20px;
+    color: white;
+    margin: 0 5% 0 0;
+}
+#ownerContact, #contactButton, #tenantContact {
+    display: none;
+}
+label {
+    display: block;
+    margin: 10px;
+    font-size: 14px;
+}
+input {
+    display: block;
+    margin: 10px;
+}
+section#contactform p {
+    font-size: 16px;
+    padding: 5px;
+}
+legend {
+    margin: 20px 0;
+    font-size: 16px;
+}
+select {
+    display: block;
+    width: 250px;
+}
+textarea {
+    display: block;
+}
+.clear {
+    clear: both;
+}
+#chooseProperty {
+    display: none;
+}
+.contactSelector {
+    width: 90%;
+    border-radius: 4px;
+    height: 25px;
+}
+@media (max-width: 85rem) {
+    #contactinfo {
+        width: 90%;
+    }
+}
+@media (max-width: 75rem) {
+    #contactinfo {
+        width: 100%;
+    }
+}
+@media (max-width: 68rem) {
+    #contactcompanyinfo{
+        width: 90%;
+        border: none;
+        float: none;
+    }
+    #contactcompanyinfo p {
+        text-align: center;
+    }
+    .contactMap {
+        width: 75%;
+        margin: 0 auto;
+    }
+        .contactMap img {
+            width: 100%;
+            height: auto;
+    }
+    section#contactform {
+        margin: 0 auto;
+        float: none;
+        width: 60%;
+    }
+}
+/*GALLERY STYLING//////////////////////////////////////////////*/
+.galleryinfo {
+    margin: 30px auto 10px auto;
+    width: 80%;
+    background: linear-gradient(rgba(128, 0, 32, 1),rgba(128, 0, 32, 0));
+    box-sizing: border-box;
+    border: 1px solid peachpuff;
+    box-shadow: 0 0 20px black;
+    min-height: 600px;
+}
+table {
+    margin: 0 auto;
+}
+table tr td {
+    padding: 20px 10px;
+}
+table tr td img {
+    border: 5px solid rgba(128, 0, 32, .5);
+    box-shadow: 0 0 10px black;
+    width: 90%;
+    height: 140px;
+}
+.galleryinfo h1 {
+    text-align: right;
+    box-sizing: border-box;
+    text-decoration: underline;
+    font-size: 2.5rem;
+    padding: 10px 50px 0;
+    font-family: papyrus;
+    text-shadow: 0 0 10px black;
+    margin: 0;
+    border-bottom: 3px solid peachpuff;
+    border-right: 3px solid peachpuff;
+    width: 15%;
+    padding: .5rem .5rem 0;
+}
+/*ABOUT STYLING//////////////////////////////////////////////*/
+#aboutpicture {
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    margin: 0;
+    height: 42.7rem;
+}
+    #aboutpicture img {
+        width: 100%;
+        height: 100%;
+    }
+#aboutsection {
+    float: right;
+    width: 75%;
+    box-sizing: border-box;
+    min-height: 30rem;
+    margin: 0 2.5%;
+}
+/*PROPERTY GALLERY STYLING*/
+#largeImagePanel {
+    display: none;
+    width: 95%;
+    height: 30rem;
+    margin: 0 auto;
+}
+    #innerbodymin img {
+        cursor: pointer;
+    }
+#largeImg {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 90rem) {
+    .classicborder {
+        width: 90%;
+        min-height: 50rem;
+    }
+}
+@media (max-width: 75rem) {
+    .classicborder {
+        width: 100%;
+    }
+}
