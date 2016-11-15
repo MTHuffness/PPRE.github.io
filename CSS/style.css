@@ -215,6 +215,10 @@ div#hours {
         width: 25%;
         margin-right: 1%;
     }
+    @keyframes box {
+    from {background-color: rgba(128, 0, 32, .8); border-radius: 50px; top: 15%; left: 30%}
+    to {background-color: rgba(128, 0, 32, .25); border-radius: 100px; top: 25%; left: 60%}
+}
 }
 @media (max-width: 300px) {
     #innerbodyhome {
