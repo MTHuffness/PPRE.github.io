@@ -216,7 +216,7 @@ div#hours {
         margin-right: 1%;
     }
 }
-@media (max-width: 350px) {
+@media (max-width: 300px) {
     #innerbodyhome {
         width: 95%;
     }
