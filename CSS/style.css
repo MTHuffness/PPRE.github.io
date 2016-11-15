@@ -575,6 +575,9 @@ section.properties {
     }
 }
 @media(max-width: 400px) {
+    #propertyHousing {
+        margin-bottom: 10rem;
+    }
     #propSummary3 {
         clear: both;
     } 
@@ -809,7 +812,7 @@ section.properties {
     }
 }
 @media(max-width:400px) {
-    #propDetail1 {
+    #propDetail1, #propDetail2, #propDetail3, #propDetail4 {
         clear: both;
         height: 1600px;
     }
@@ -844,6 +847,9 @@ section.properties {
         clear: both;
         width: 50%;
         margin: 10px auto;
+    }
+    .amenitiesBox ul {
+        margin: 0;
     }
 }
 /*CONTACT STYLING//////////////////////////////////////////////*/
