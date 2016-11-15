@@ -182,20 +182,6 @@ div#hours {
     margin-top: -10px;
     background: linear-gradient(rgba(128, 0, 32, 1),rgba(128, 0, 32, 0));
 }
-/*@media (max-width: 85rem) {
-    .classicborder {
-        width: 90%;
-    }
-    section#carousel {
-        width: 40%;
-    }
-    div#hours {
-        margin: 0;
-    }
-    .classicborder {
-        min-height: 45rem;
-    }
-}*/
 @media (max-width: 1200px) {
     #innerbodyhome {
         width: 90%;
@@ -219,15 +205,29 @@ div#hours {
         margin-right: 1%;
     }
 }
-@media (max-width: 300px) {
+@media (max-width: 400px) {
     #innerbodyhome {
         width: 95%;
+        height: 2150px;
     }
     #Nametop h1 {
         font-size: 17px;
     }
     #box {
         display: none;
+    }
+    div#hours {
+        clear: both;
+        float: none;
+        width: 90%;
+        margin: 1rem auto;
+    }
+    section#carousel {
+        margin: 0;
+        clear: both;
+        float: none;
+        width: 100%;
+        border: 1px solid peachpuff;
     }
 }
 /*IMAGE CAROUSEL CSS SETTINGS//////////////////////////////////////*/
