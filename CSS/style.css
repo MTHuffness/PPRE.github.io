@@ -109,15 +109,15 @@ header#toplinks {
         padding: 0 15px;
     }
 }
-@media (max-width: 390px) {
+@media (max-width: 400px) {
     #toplinks ul {
         width: 100%;
         margin: 0;
         padding: 15px 0;
     }
     #toplinks ul li {
-        padding: 15px 0;
-        margin: 0;
+        padding: 14px 0;
+        margin: 0 3px;
         box-sizing: border-box;
         font-size: 15px;
     }
