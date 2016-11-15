@@ -227,6 +227,9 @@ div#hours {
         width: 95%;
         height: 800px;
     }
+    #innerbody {
+        width: 95%;
+    }
     #Nametop h1 {
         font-size: 17px;
     }
