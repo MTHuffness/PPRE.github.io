@@ -223,6 +223,9 @@ div#hours {
     #Nametop h1 {
         font-size: 17px;
     }
+    #box {
+        display: none;
+    }
 }
 /*IMAGE CAROUSEL CSS SETTINGS//////////////////////////////////////*/
 #carousel figure {
