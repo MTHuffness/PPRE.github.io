@@ -216,12 +216,12 @@ div#hours {
         margin-right: 1%;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 350px) {
     #innerbodyhome {
         width: 95%;
     }
     #Nametop h1 {
-        font-size: 20px;
+        font-size: 17px;
     }
 }
 /*IMAGE CAROUSEL CSS SETTINGS//////////////////////////////////////*/
