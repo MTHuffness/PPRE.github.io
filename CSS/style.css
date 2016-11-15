@@ -223,6 +223,10 @@ div#hours {
         width: 95%;
         height: 2200px;
     }
+    #innerbodymin {
+        width: 95%;
+        height: 800px;
+    }
     #Nametop h1 {
         font-size: 17px;
     }
@@ -570,6 +574,16 @@ section.properties {
         margin-top: -7.1rem;
     }
 }
+@media(max-width: 400px) {
+    #propSummary3 {
+        clear: both;
+    } 
+    #propSummary1, #propSummary2, #propSummary3, #propSummary4 {
+        width: 50%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
 
 /*DETAIL OF PROPERTY INFORMATION*/
 #propDetail1, #propDetail2, #propDetail3, #propDetail4 {
@@ -794,7 +808,44 @@ section.properties {
         width: 60%;
     }
 }
-
+@media(max-width:400px) {
+    #propDetail1 {
+        clear: both;
+        height: 1600px;
+    }
+    .propHeading h2, .propHeading p {
+        margin: 0;
+        width: 100%;
+        float: none;
+    }
+    .propHeading h2 {
+        text-align: center;
+    }
+    .propMap h2 {
+        text-align: left;
+    }
+    .map {
+        width: 100%;
+    }
+    #birchwoodImage, #ftImage, #pinewoodImage {
+        width: 100%;
+        margin: 100px 0 0;
+    }
+    #birchwoodImage > figure.active, #ftImage > figure.active, #pinewoodImage > figure.active {
+        margin: 0;
+    }
+    #birchwoodImage > figure.active > img, #ftImage > figure.active > img, #pinewoodImage > figure.active > img {
+        width: 100%;
+        margin: 0;
+        height: 300px;
+    }
+    #contactProperty {
+        float: none;
+        clear: both;
+        width: 50%;
+        margin: 10px auto;
+    }
+}
 /*CONTACT STYLING//////////////////////////////////////////////*/
 #contactinfo {
     margin: 2rem auto 10px auto;
