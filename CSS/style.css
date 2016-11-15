@@ -216,6 +216,14 @@ div#hours {
         margin-right: 1%;
     }
 }
+@media (max-width: 400px) {
+    #innerbodyhome {
+        width: 95%;
+    }
+    #Nametop h1 {
+        font-size: 20px;
+    }
+}
 /*IMAGE CAROUSEL CSS SETTINGS//////////////////////////////////////*/
 #carousel figure {
     margin: 0;
