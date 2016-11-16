@@ -36,7 +36,7 @@
     function dropDown(that) {
         if (that.value == "3") {
             document.getElementById("chooseProperty").style.display = "block";
-            document.getElementById("contactinfo").style.minHeight = "48rem";
+            document.getElementById("contactinfo").style.minHeight = "50rem";
         }
         else {
             document.getElementById("chooseProperty").style.display = "none";
