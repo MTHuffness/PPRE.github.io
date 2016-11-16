@@ -134,16 +134,22 @@
 $(document).ready(function() {
     $('#propertyHousing').fadeIn(1200);
     $('#propSummary1').click(function() {
-        $('#propDetail1').slideDown(1200);
+        $('#propDetail1').slideDown(1200, function() {
         window.location("#movePageLower");
+        });
         $('#propDetail2, #propDetail3, #propDetail4').hide();
     })
     $('#propSummary2').click(function() {
-        $('#propDetail2').slideDown(1200);
+        $('#propDetail2').slideDown(1200, function() {
+            window.location("#movePageLower2");
+        });
         $('#propDetail1, #propDetail3, #propDetail4').hide();
     })
     $('#propSummary3').click(function() {
-        $('#propDetail3').slideDown(1200);
+        $('#propDetail3').slideDown(1200, function() {
+            $(this).height("900px");
+            window.location("#movePageLower3");
+        });
         $('#propDetail2, #propDetail1, #propDetail4').hide();
     })
     $('#propSummary4').click(function() {

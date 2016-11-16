@@ -612,7 +612,7 @@ section.properties {
     width: 50%;
     height: 48rem;
     box-sizing: border-box;
-    border-bottom: 1px solid peachpuff;
+    /*border-bottom: 1px solid peachpuff;*/
     border-right: 1px solid peachpuff;
     margin: 0;
     border-top-left-radius: 100px;
