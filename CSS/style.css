@@ -898,6 +898,7 @@ section.properties {
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 #contactComment {
+    width: 90%;
     margin: 5px;
     border-radius: 8px;
 }
@@ -968,26 +969,11 @@ textarea {
     }
 }
 @media (max-width: 68rem) {
-    #contactcompanyinfo{
-        width: 90%;
-        border: none;
-        float: none;
-    }
-    #contactcompanyinfo p {
-        text-align: center;
+    #contactcompanyinfo p, #contactcompanyinfo img {
+        margin: 10px 0;
     }
     .contactMap {
-        width: 75%;
-        margin: 0 auto;
-    }
-        .contactMap img {
-            width: 100%;
-            height: auto;
-    }
-    section#contactform {
-        margin: 0 auto;
-        float: none;
-        width: 60%;
+        margin: 0;
     }
 }
 @media (max-width:400px) {
