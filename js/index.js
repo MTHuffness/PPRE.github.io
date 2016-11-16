@@ -43,3 +43,17 @@
             document.getElementById("contactinfo").style.minHeight = "43rem";
         }
     }
+
+//jQUERY-------------------------------------------------------------------------
+
+//PIKES PEAK BACKGROUND PHOTO FADE IN
+$(document).ready(function() {
+    $('#pikespeak').fadeIn(1200);
+    $('#box').delay(1000).fadeIn(1000);
+})
+
+//CONTACT PAGE FADE-IN & SLIDE DOWN
+$(document).ready(function() {
+    $('#contactcompanyinfo').hide().delay(400).effect('slide', 'left', 1000);
+    $('#contactform').hide().delay(1400).fadeIn(1000);
+})

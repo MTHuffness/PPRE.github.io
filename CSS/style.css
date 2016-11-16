@@ -163,6 +163,7 @@ h1#pikespeak {
     background-size: 100% 100%;
     text-indent: -9999px;
     margin: 0 auto;
+    display: none;
 }
 /*MAIN WELCOME PAGE//////////////////////////////////////////////////////////////*/
 .classicborder {
@@ -324,6 +325,7 @@ div#hours ul li#hours-top {
     background-color: rgba(128, 0, 32, 1);
     border-radius: 50px;
     position: absolute;
+    display: none;
 }
 @keyframes box {
     from {background-color: rgba(128, 0, 32, .8); border-radius: 50px; top: 15%; left: 35%}
@@ -501,6 +503,7 @@ section.properties {
     min-height: 20rem;
     margin: 2rem auto 0;
     border-radius: 20px;
+    display: none;
 }
     .propertiesHeading {
         margin: 0;
@@ -1049,7 +1052,7 @@ table tr td img {
     width: 20%;
     box-sizing: border-box;
     margin: 0;
-    height: 42.7rem;
+    height: 42.5rem;
 }
     #aboutpicture img {
         width: 100%;
@@ -1083,6 +1086,9 @@ table tr td img {
         width: 90%;
         min-height: 50rem;
     }
+    #aboutpicture {
+        height: 49.5rem;
+    }
 }
 @media (max-width: 75rem) {
     .classicborder {
@@ -1090,6 +1096,9 @@ table tr td img {
     }
     #innerbody {
         width: 90%;
+    }
+    #aboutpicture {
+        height: 52rem;
     }
 }
 @media (max-width:400px) {

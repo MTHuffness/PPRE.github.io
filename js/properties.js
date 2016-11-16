@@ -2,74 +2,6 @@
 
     //HAVE JAVASCRIPT SHOW BIRCHWOOD PROPERTIES ONCE THE IMG IS CLICKED
 
-        //SET VARIABLES FOR EACH IMG CONTAINING A PROPERTY
-    var property1 = document.getElementById("propDetail1");
-    var property2 = document.getElementById("propDetail2");
-    var property3 = document.getElementById("propDetail3");
-    var property4 = document.getElementById("propDetail4");
-
-    //FUNCTION TO DISPLAY THE PROPER PROPERTY AND HIDE ANY PROPERTIES THAT ARE VISIBLE
-    var mql = window.matchMedia("(max-width: 400px)");
-
-    function loadBirchwood() {
-        if (property2.style.display == 'block' || property3.style.display == 'block' || property4.style.display == 'block') {
-        property1.style.display = 'block';
-        property2.style.display = 'none';
-        property3.style.display = 'none';
-        property4.style.display = 'none';
-        window.location = "#movePageLower";
-        window.onload = document.getElementById("innerbody").style.height = "85rem";
-        } else {
-        property1.style.display = 'block';
-        window.location = "#movePageLower";
-        window.onload = document.getElementById("innerbody").style.height = "85rem";
-        }
-    }
-    function apartments2() {
-        if (property1.style.display == 'block' || property3.style.display == 'block' || property4.style.display == 'block') {
-        property2.style.display = 'block';
-        property1.style.display = 'none';
-        property3.style.display = 'none';
-        property4.style.display = 'none';
-        window.location = "#movePageLower";
-        window.onload = document.getElementById("innerbody").style.height = "85rem";
-        } else {
-        property2.style.display = 'block';
-        window.location = "#movePageLower";
-        window.onload = document.getElementById("innerbody").style.height = "85rem";
-        }
-    }
-    function apartments3() {
-        if (property1.style.display == 'block' || property2.style.display == 'block' || property4.style.display == 'block') {
-        property3.style.display = 'block';
-        property1.style.display = 'none';
-        property2.style.display = 'none';
-        property4.style.display = 'none';
-        window.location = "#movePageLower";
-        window.onload = document.getElementById("innerbody").style.height = "85rem";
-        }
-        else {
-        property3.style.display = 'block';
-        window.location = "#movePageLower";
-        window.onload = document.getElementById("innerbody").style.height = "85rem";
-        }
-    }
-    function apartments4() {
-        if (property1.style.display == 'block' || property3.style.display == 'block' || property2.style.display == 'block') {
-        property4.style.display = 'block';
-        property1.style.display = 'none';
-        property3.style.display = 'none';
-        property2.style.display = 'none';
-        window.location = "#movePageLower";
-        window.onload = document.getElementById("innerbody").style.height = "85rem";
-        }
-        else {
-        property4.style.display = 'block';
-        window.location = "#movePageLower";
-        window.onload = document.getElementById("innerbody").style.height = "85rem";
-        }
-    }
-
     //CAROUSEL CODE FOR EACH PROPERTY
     //BIRCHWOOD-----------------------------------------------------
     var slideInterval = 3500;
@@ -196,3 +128,26 @@
             document.getElementById('galleryTable').style.display = 'block';
             document.getElementById('mainGalleryLink').style.display = 'block';
         }
+
+//JQUERY---------------------------------------------------------------------------
+
+$(document).ready(function() {
+    $('#propertyHousing').fadeIn(1200);
+    $('#propSummary1').click(function() {
+        $('#propDetail1').slideDown(1200);
+        window.location("#movePageLower");
+        $('#propDetail2, #propDetail3, #propDetail4').hide();
+    })
+    $('#propSummary2').click(function() {
+        $('#propDetail2').slideDown(1200);
+        $('#propDetail1, #propDetail3, #propDetail4').hide();
+    })
+    $('#propSummary3').click(function() {
+        $('#propDetail3').slideDown(1200);
+        $('#propDetail2, #propDetail1, #propDetail4').hide();
+    })
+    $('#propSummary4').click(function() {
+        $('#propDetail4').slideDown(1200);
+        $('#propDetail2, #propDetail3, #propDetail1').hide();
+    })
+})
