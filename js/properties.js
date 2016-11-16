@@ -153,7 +153,8 @@ $(document).ready(function() {
         $('#propDetail2, #propDetail1, #propDetail4').hide();
     })
     $('#propSummary4').click(function() {
-        $('#propDetail4').slideDown(1200);
+        //$('#propDetail4').slideDown(1200);
         $('#propDetail2, #propDetail3, #propDetail1').hide();
+        alert("This is still in construction... please try again soon!!")
     })
 })
