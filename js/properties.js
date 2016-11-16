@@ -9,7 +9,7 @@
     var property4 = document.getElementById("propDetail4");
 
     //FUNCTION TO DISPLAY THE PROPER PROPERTY AND HIDE ANY PROPERTIES THAT ARE VISIBLE
-    var mq = window.matchMedia("(min-width: 70rem)");
+    var mql = window.matchMedia("(max-width: 400px)");
 
     function loadBirchwood() {
         if (property2.style.display == 'block' || property3.style.display == 'block' || property4.style.display == 'block') {
@@ -19,8 +19,7 @@
         property4.style.display = 'none';
         window.location = "#movePageLower";
         window.onload = document.getElementById("innerbody").style.height = "85rem";
-        }
-        else {
+        } else {
         property1.style.display = 'block';
         window.location = "#movePageLower";
         window.onload = document.getElementById("innerbody").style.height = "85rem";
@@ -34,8 +33,7 @@
         property4.style.display = 'none';
         window.location = "#movePageLower";
         window.onload = document.getElementById("innerbody").style.height = "85rem";
-        }
-        else {
+        } else {
         property2.style.display = 'block';
         window.location = "#movePageLower";
         window.onload = document.getElementById("innerbody").style.height = "85rem";

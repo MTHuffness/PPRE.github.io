@@ -778,7 +778,7 @@ section.properties {
         }
 @media(max-width:80rem) {
     #propDetail1, #propDetail2, #propDetail3, #propDetail4 {
-        height: 110rem;
+        height: 101rem;
         background: rgba(128, 0, 32, .75);
         width: 98%;
     }
@@ -815,14 +815,9 @@ section.properties {
     }
 }
 @media(max-width:400px) {
-    #propDetail1, #propDetail2, #propDetail3, #propDetail4 {
-        clear: both;
-        height: 1600px;
-    }
     .propHeading h2, .propHeading p {
         margin: 0;
         width: 100%;
-        float: none;
     }
     .propHeading h2 {
         text-align: center;
