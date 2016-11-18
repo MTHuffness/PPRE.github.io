@@ -1,6 +1,6 @@
 <?php
 if($_POST["submit"]) {
-    mail("mhuffman88@ymail.com", "PREE Contact email!!", $_POST["userInformation"], "From: frogunda@gmail.com");
+    mail("mhuffman88@ymail.com", "PPRE Contact email!!", $_POST["userInformation"], "From: frogunda@gmail.com");
 }
 ?>
 
@@ -19,7 +19,7 @@ if($_POST["submit"]) {
     </head>
 
     <body>
-        <section id="innerbody">
+        <section id="innerbodycontact">
         <header id="toplinks">
             <nav>
                 <ul>
@@ -49,7 +49,7 @@ if($_POST["submit"]) {
                 <section id="contactform">
                         <p>For more information on a specific property, please feel free to 
                         contact the number above or complete & submit the information below.</p>
-                    <form id="contactInformation" action="contact.php" method="post">
+                    <form id="contactInformation" action="mailto:mhuffman88@ymail.com" method="post" enctype="text/p">
                         <fieldset id="contactFieldset">
                             <legend>Contact Information</legend>
                             <label for="formName">Name: <input type="text" placeholder="Full Name*" id="formName" class="form-control" name="userInformation" required/></label>
