@@ -274,6 +274,64 @@ div#hours {
 #carousel > figure > img {
     display: none;
 }
+/*NEW IMAGE CAROUSEL LINK:http://www.jqueryscript.net/slider/Tiny-jQuery-Image-Slider-Slideshow-With-Caption-Support.html*/
+#slider-container {
+  height: 410px;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 800px;
+}
+
+#slider {
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+}
+
+#slider .slide img {
+  height: 400px;
+  width: 100;
+}
+
+#prev, #next {
+  cursor: pointer;
+  max-width: 60px;
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  z-index: 999;
+}
+
+#prev { left: 0; top: 200px; }
+
+#next { right: 0; top: 200px; }
+
+#slider-container:hover #prev, #slider-container:hover #next { opacity: .7; }
+
+.slide {
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.slide-copy {
+  background: #777;
+  background: rgba(0, 0, 0, .5);
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 2;
+}
 /*WELCOME LETTER SETTING ///////////////////////////////////////////////////*/
 section#welcomepage h2, #carousel h2 {
     border-bottom: 2px solid black;

@@ -8,9 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
             <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Pikes Peak Property Management Home Page</title>
-        <link rel="stylesheet" href="CSS/style.css" />    
-        <!-- Bootstrap -->
-        <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+        <link rel="stylesheet" href="CSS/style.css" media="screen" />
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </head>
@@ -69,16 +67,36 @@ SCROLLS WITH THE PAGE (ALL CONTENT WIL BE ON ONE PAGE///////////////////////////
                 </section>
             </section>
             <section id="carousel">
-
-                <figure class="active">
-                    <img src="images/birchwood/frontpic1.jpg" alt="Birchwood Picture" height="450px">
-                </figure>
-                <figure>
-                    <img src="images/fountain terrace/frontpic1.jpg" alt="Fountain Terrace Picture" height="450px">
-                </figure>
-                <figure>
-                    <img src="images/pinewood/frontpic1.jpg" alt="Pinewood Picture" height="450px">
-                </figure>
+                <div id="slider-container">
+                    <img src="img/left-arrow.png" id="prev">
+                    <ul id="slider">
+                        <li class="slide">
+                        <div class="slide-copy">
+                            <h2>Birchwood Village</h2>
+                            <p>Birchwood Village apartment homes offers a great location. A minute from the Citadel 
+                            Mall, other shopping, restaurants, and much much more.</p>
+                        </div>
+                        <img src="images/birchwood/frontpic1.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                        <div class="slide-copy">
+                            <h2>Fountain Terrace</h2>
+                            <p>Welcome to Fountain Terrace Apartments, a wonderful apartment community with everything you're looking 
+                            for.</p>
+                        </div>
+                        <img src="images/fountain terrace/frontpic1.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                        <div class="slide-copy">
+                            <h2>Pinewood Apartments</h2>
+                            <p>Pinewood Apartments located in Central Colorado Springs, We have spacious one & 
+                            two bedrooms Apartment homes with walk in closets and on-site Laundry.</p>
+                        </div>
+                        <img src="images/pinewood/frontpic1.jpg" alt="">
+                        </li>
+                    </ul>
+                    <img src="img/right-arrow.png" id="next">     
+                </div>
                     <h2>Contact:</h2>
                     <p><strong>Address:</strong> 2470 Solarglen Drive</p>
                    <p> Colorado Springs, CO 80916</p>
