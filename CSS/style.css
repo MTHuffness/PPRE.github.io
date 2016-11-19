@@ -59,6 +59,15 @@ body {
     text-shadow: 0 0 3px peachpuff;
     color: rgb(128, 0, 32);
 }
+.titleHeading4 {
+    margin: 0;
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    text-align: center;
+    background-image: linear-gradient(to right,rgba(128, 0, 32,0) 0%,rgba(128, 0, 32, 1) 50%,rgba(128, 0, 32, 0) 100%);
+    text-shadow: 0 0 3px peachpuff;
+    color: rgb(128, 0, 32);
+}
 .normal {
     color: white;
 }
@@ -274,7 +283,8 @@ div#hours {
 #carousel > figure > img {
     display: none;
 }
-/*NEW IMAGE CAROUSEL LINK:http://www.jqueryscript.net/slider/Tiny-jQuery-Image-Slider-Slideshow-With-Caption-Support.html*/
+/*NEW IMAGE CAROUSEL LINK:http://www.jqueryscript.net/slider/Tiny-jQuery-Image-Slider-Slideshow-
+With-Caption-Support.html*/
 #slider-container {
   height: 410px;
   max-width: 100%;
