@@ -141,7 +141,7 @@ $(document).ready(function() {
     })
     $('#propSummary2').click(function() {
         $('#propDetail2').slideDown(1200, function() {
-            $(this).height("850px");
+            $(this).height("85  0px");
             window.location("#movePageLower2");
         });
         $('#propDetail1, #propDetail3, #propDetail4').hide();
