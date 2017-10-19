@@ -1,21 +1,18 @@
 //PROPERTIES / VACANCIES JAVASCRIPT
+$(document).ready(function() {
 
     //HAVE JAVASCRIPT SHOW BIRCHWOOD PROPERTIES ONCE THE IMG IS CLICKED
 
     //CAROUSEL CODE FOR EACH PROPERTY
     //BIRCHWOOD-----------------------------------------------------
     var slideInterval = 3500;
-
-    function getFigures() {
-        return document.getElementById('birchwoodImage').getElementsByTagName('figure');
-    }
-
+  
     function moveForward() {
         var pointer;
-        var figures = getFigures();
+        var figures = document.getElementById('birchwoodImage').getElementsByTagName('figure');
         for (var i = 0; i < figures.length; i++) {
             if (figures[i].className =='active') {
-                figures[i].className = '';
+                figures[i].className = 'fadeItOut';
                 pointer = i;
             }
         }
@@ -23,14 +20,10 @@
             pointer = 0;
         }
         figures[pointer].className = 'active';
-        setTimeout(moveForward, slideInterval);
+        $('.active').fadeIn(1000);
     }
-
-    function startPlayback() {
-        setTimeout(moveForward, slideInterval);
-    }
-
-    startPlayback();
+        
+    setInterval(moveForward, slideInterval);
 
     //FOUNTIAN TERRACE-----------------------------------------------------
     var slideIntervalft = 3500;
@@ -131,7 +124,6 @@
 
 //JQUERY---------------------------------------------------------------------------
 
-$(document).ready(function() {
     $('#propertyHousing').fadeIn(1200);
     $('#propSummary1').click(function() {
         $('#propDetail1').slideDown(1200, function() {
